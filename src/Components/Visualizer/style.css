@@ -1,0 +1,29 @@
+.visualizer {
+  min-height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.turningMessage {
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.drop {
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5));
+	width:1px;
+	height:89px;
+	position: absolute;
+	top:200px;
+	animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+  to { margin-top: 900px; }
+}

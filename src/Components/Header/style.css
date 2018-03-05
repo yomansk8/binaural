@@ -1,0 +1,22 @@
+.header {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+  padding: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.description {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.67em;
+}
+
+.frequency {
+  font-size: 1.5em;
+  text-align: right;
+  margin-top: 0.67em;
+}

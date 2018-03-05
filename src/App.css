@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  color: white;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.App-intro {
+  font-size: 1.2em;
+}
+
+.delta {
+  background-color: #0a3d62;
+}
+.theta {
+  background-color: #3c6382;
+}
+.alpha {
+  background-color: #3c6382;
+}
+.beta {
+  background-color: #3c6382;
+}
+.gamma {
+  background-color: ##60a3bc;
+}
