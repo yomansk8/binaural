@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { Grid, Row, Col } from "react-flexbox-grid"
+import { isMobile } from 'react-device-detect'
 import "./style.css"
 
 class Header extends Component {
@@ -28,13 +29,13 @@ class Header extends Component {
         <Grid fluid>
           <Row>
             <Col xs={12} md={3}>
-              <h1 className="title">Binaural</h1>
+              <h1 className={`title ${isMobile ? 'mobile-header' : ''}`}>Binaural</h1>
             </Col>
             <Col xs={12} md={6}>
-              <div className="description">{this.getDescription(range)}</div>
+              <div className={`description ${isMobile ? 'mobile-header' : ''}`}>{this.getDescription(range)}</div>
             </Col>
             <Col xs={12} md={3}>
-              <div className="frequency">{actualFrequency}Hz</div>
+              <div className={`frequency ${isMobile ? 'mobile-header' : ''}`}>{actualFrequency}Hz</div>
             </Col>
           </Row>
         </Grid>

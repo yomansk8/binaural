@@ -26,7 +26,7 @@ const rainMaker = new Tone.Noise("pink").start().toMaster()
 leftEar.connect(split.left)
 rightEar.connect(split.right)
 
-const INITIAL_FREQ = 10
+const INITIAL_FREQ = localStorage.getItem('actualFrequency') || 10
 
 class App extends Component {
   constructor() {
@@ -78,9 +78,9 @@ class App extends Component {
     }
   }
 
-  handleFrequencyChange = event => {
-    const actualFrequency = parseInt(event.target.value, 10)
+  handleFrequencyChange = actualFrequency => {
     const { leftFrequency, rightFrequency } = this.calculateFrequencies(actualFrequency)
+    localStorage.setItem('actualFrequency', actualFrequency)
     this.setState({ actualFrequency, leftFrequency, rightFrequency, range: this.getRange(actualFrequency) }, this.setFrequencies)
   }
 
