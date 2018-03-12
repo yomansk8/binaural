@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import FrequencySelector from "../FrequencySelector"
 import "./style.css"
 
-const DROPS_NUMBER = 120
+const DROPS_NUMBER = 150
 const MESSAGE_DURATION = 15000
 const MESSAGES = [
   "Binaural is a completely free and open source binaural beat generator.",
@@ -30,7 +30,7 @@ class Visualizer extends Component {
     const rainSection = document.getElementById("rain")
 
     for (let i = 1; i < DROPS_NUMBER; i++) {
-      const dropLeft = this.randRange(0, 1600)
+      const dropLeft = this.randRange(0, window.screen.width)
       const dropTop = this.randRange(-1000, 1400)
 
       const drop = document.createElement("div")
