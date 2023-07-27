@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amaranth', sans-serif;
+  background-color: #60a3bc;
+  font-size: 20px;
+}
+
+#root {
+  min-height: 100%;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

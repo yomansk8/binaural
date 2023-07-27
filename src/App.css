@@ -1,26 +1,42 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  color: white;
-  height: 100vh;
-  transition: 0.3s;
 }
 
-.App-intro {
-  font-size: 1.2em;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.delta {
-  background-color: #072D48;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.theta {
-  background-color: #0A3D62;
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
-.alpha {
-  background-color: #0B456F;
+
+.card {
+  padding: 2em;
 }
-.beta {
-  background-color: #0D4D7B;
-}
-.gamma {
-  background-color: #126DAE;
+
+.read-the-docs {
+  color: #888;
 }
